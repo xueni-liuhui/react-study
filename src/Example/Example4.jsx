@@ -4,7 +4,7 @@ class Child extends Component{
         super(props)
         console.log(this.props)
         this.state={
-            count:0
+           count:0                                                                                                                                                                                                                        
         }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     }
     componentDidMount(){

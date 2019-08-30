@@ -19,6 +19,9 @@ export default class Example2 extends Component {
     componentDidMount() {
         // this.state.name="李四"; 这种写法是错误的
         this.setState({name:"李四"})
+        let tempObj = this.state.demoObj;//深层更新state值
+            tempObj.name ="shshdjjsd";
+        this.setState({demoObj:tempObj})
     }
     render() {
         let listHtml = this.state.list.map((item, index) => {
